@@ -8,16 +8,17 @@ const Stack = createNativeStackNavigator();
 function MyStack() {
     return(
         <Stack.Navigator>
-            <Stack.Screen name="Home" component={Home}/>
+            <Stack.Screen name="Inicio" component={Home}/>
             <Stack.Screen name="Add" component={Add} options={{presentation: 'modal'}}/>
         </Stack.Navigator>
     )
 }
 
-export default function Navigation() {
+export default function Navigation(props) {
     return (
+
         <NavigationContainer>
-            <MyStack />
+            <MyStack/>
         </NavigationContainer>
     )
 }

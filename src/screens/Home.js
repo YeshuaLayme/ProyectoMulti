@@ -12,9 +12,9 @@ export default function Home() {
 
     React.useLayoutEffect(() => {
         navigation.setOptions({
-            headerRight: () => <RN.Button title='Add' onPress={() => navigation.navigate('Add')} />
+            headerRight: () => <RN.Button title='Añadir' onPress={() => navigation.navigate('Add')} />
         })
-    },[navigation])
+    },[])
 
     React.useEffect(() => {
         const collectionRef = collection(database, 'products');
